@@ -1,0 +1,16 @@
+Formula for quick estimation of total click counts on the Z basis (not considering detector saturation).
+
+
+Qubit rate: (1/1.68e-9)
+total number of pulses: (1/1.68e-9) * 1.1
+Mu = 0.7
+Prob. of having more than 1 photon: (1 - exp(-0.7) )
+Channel loss effect: To be calculated for each channel loss.... For 34.85 dB loss, 0.03273% or a factor of 0.0003273
+Z/X at bob: A 50:50 BS
+Channel to detector: 0.6 dB loss or a factor of 0.9 transmission
+Detector's eff: factor of 0.83
+
+
+Example for  34.85 dB loss:
+
+Tot clicks estimation = (1/1.68e-9) * 1.1 * (1 - exp(-0.7) ) * 0.0003273 * 0.5 * 0.9 * 0.83
